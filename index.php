@@ -20,36 +20,63 @@
 
 		<title>Title Goes Here</title>
 
+		<!-- socialize.js script should only be included once -->
+		<script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3_6Xi2j7Oip7qk2BhjndSy6sxfG1mL-M5VABBF-vc3NZJ0CdssXTapV-z-Zlqh1rbM">
+		{
+			siteName: 'dev.robertmcgregor.ca (testing various data func)'
+			,enabledProviders: 'facebook,twitter,googleplus,linkedin,yahoo,microsoft,aol,foursquare,orkut,instagram,vkontakte,renren,QQ,Sina,kaixin'
+		}
+		</script>
 
 	</head>
 
 	<body>
 
-	<?php
+		<?php
 
-		$result = Braintree_Transaction::sale(array(
-		    'amount' => '1010.00',
-		    'creditCard' => array(
-		        'number' => '5105105105105100',
-		        'expirationMonth' => '05',
-		        'expirationYear' => '12'
-		    )
-		));
+			$result = Braintree_Transaction::sale(array(
+			    'amount' => '1010.00',
+			    'creditCard' => array(
+			        'number' => '5105105105105100',
+			        'expirationMonth' => '05',
+			        'expirationYear' => '12'
+			    )
+			));
 
-		if ($result->success) {
-		    print_r("success!: " . $result->transaction->id);
-		} else if ($result->transaction) {
-		    print_r("Error processing transaction:");
-		    print_r("\n  message: " . $result->message);
-		    print_r("\n  code: " . $result->transaction->processorResponseCode);
-		    print_r("\n  text: " . $result->transaction->processorResponseText);
-		} else {
-		    print_r("Message: " . $result->message);
-		    print_r("\nValidation errors: \n");
-		    print_r($result->errors->deepAll());
+			if ($result->success) {
+			    print_r("success!: " . $result->transaction->id);
+			} else if ($result->transaction) {
+			    print_r("Error processing transaction:");
+			    print_r("\n  message: " . $result->message);
+			    print_r("\n  code: " . $result->transaction->processorResponseCode);
+			    print_r("\n  text: " . $result->transaction->processorResponseText);
+			} else {
+			    print_r("Message: " . $result->message);
+			    print_r("\nValidation errors: \n");
+			    print_r($result->errors->deepAll());
+			}
+
+		?>
+		
+		<br />
+
+		<script type="text/javascript">
+		var login_params=
+		{
+			showTermsLink: 'false'
+			,height: 100
+			,width: 330
+			,containerID: 'componentDiv'
+			,buttonsStyle: 'fullLogo'
+			,autoDetectUserProviders: ''
+			,facepilePosition: 'none'
 		}
+		</script>
+		<div id="componentDiv"></div>
+		<script type="text/javascript">
+		   gigya.socialize.showLoginUI(login_params);
+		</script>
 
-	?>
 
 	</body>
 
