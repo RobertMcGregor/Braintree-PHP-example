@@ -1,2 +1,0 @@
-Braintree-PHP-example
-=====================
