@@ -2,7 +2,7 @@
 
 <?php
 
-	require_once 'lib/Braintree.php';
+	require_once 'lib/braintree-php-2.27.0/lib/Braintree.php';
 
 	Braintree_Configuration::environment('sandbox');
 	Braintree_Configuration::merchantId('444s7mg9tmz62x24');
