@@ -28,7 +28,7 @@
 	<?php
 
 		$result = Braintree_Transaction::sale(array(
-		    'amount' => '1000.00',
+		    'amount' => '1010.00',
 		    'creditCard' => array(
 		        'number' => '5105105105105100',
 		        'expirationMonth' => '05',
@@ -50,8 +50,6 @@
 		}
 
 	?>
-
-		<p>This is my web page</p>
 
 	</body>
 
