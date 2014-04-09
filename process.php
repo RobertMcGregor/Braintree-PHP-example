@@ -15,8 +15,6 @@
 	Braintree_Configuration::publicKey('sn37xjfq972bbpvz');
 	Braintree_Configuration::privateKey('c9230a35c0f109d5095fb9448c2dfcd3');
 
-
-
 	if($_POST){
 		echo process($_POST['amount'],$_POST['number'],$_POST['expirationMonth'], $POST['expirationYear']); 
 	}

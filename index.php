@@ -94,7 +94,7 @@
 				<script>
 				var braintree = Braintree.create("YourClientSideEncryptionKey");
 				braintree.onSubmitEncryptForm("braintree-payment-form");
-				</script>
+				</script>	
 			</div>
 
 

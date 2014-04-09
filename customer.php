@@ -32,6 +32,7 @@
         echo("Success! Customer ID: " . $result->customer->id . "<br/>");
         echo("<a href='./subscription.php?customer_id=" . $result->customer->id . "'>Create subscription for this customer</a>");
     } else {
+        echo "customer.php";
         echo("Validation errors:<br/>");
         foreach (($result->errors->deepAll()) as $error) {
             echo("- " . $error->message . "<br/>");
