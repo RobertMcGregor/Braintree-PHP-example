@@ -32,31 +32,7 @@
 
 	<body>
 
-		<?php
 
-			$result = Braintree_Transaction::sale(array(
-			    'amount' => '1010.00',
-			    'creditCard' => array(
-			        'number' => '5105105105105100',
-			        'expirationMonth' => '05',
-			        'expirationYear' => '12'
-			    )
-			));
-
-			if ($result->success) {
-			    print_r("success!: " . $result->transaction->id);
-			} else if ($result->transaction) {
-			    print_r("Error processing transaction:");
-			    print_r("\n  message: " . $result->message);
-			    print_r("\n  code: " . $result->transaction->processorResponseCode);
-			    print_r("\n  text: " . $result->transaction->processorResponseText);
-			} else {
-			    print_r("Message: " . $result->message);
-			    print_r("\nValidation errors: \n");
-			    print_r($result->errors->deepAll());
-			}
-
-		?>
 
 		<br />
 
@@ -81,5 +57,26 @@
 
 </html>
 
+<?php
+	
+	function process($amount='1000.00', $number='5105105105105100', $expirationMonth='05', $expirationYear='12' ){
+		$result = Braintree_Transaction::sale(array(
+		    'amount' => $amount,
+		    'creditCard' => array(
+		        'number' => $number,
+		        'expirationMonth' => $expirationMonth,
+		        'expirationYear' => $expirationYear
+		    )
+		));
+
+		if ($result->success) {
+		    return "success!: " . $result->transaction->id;
+		} else if ($result->transaction) {
+			return "Error processing transaction: \n  message: " . $result->message . "\n  code: " . $result->transaction->processorResponseCode . "\n  text: " . $result->transaction->processorResponseText;
+		} else {
+		    return "Message: " . $result->message . "\nValidation errors: \n" . $result->errors->deepAll();
+		}
+	}
+?>
 
 
