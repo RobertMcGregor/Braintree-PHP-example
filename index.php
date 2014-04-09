@@ -60,7 +60,6 @@
 	    		<p class="lead">This is a quick test to get braintree, gigya talking for the TVOD project.</p>
 	    	</div>
 
-
     <h1>Braintree Customer Form</h1>
       <form action="customer.php" method="POST" id="braintree-payment-form">
       <h2>Customer Information</h2>
@@ -91,14 +90,21 @@
       </p>
       <input class="submit-button" type="submit" />
     </form>
-    <script src="https://js.braintreegateway.com/v1/braintree.js"></script>
-    <script>
-      var braintree = Braintree.create("YourClientSideEncryptionKey");
-      braintree.onSubmitEncryptForm("braintree-payment-form");
-    </script>
-
 
     	</div><!-- /.container -->
+
+    	<div>
+    	<h1>Test Data</h1>
+    	card num -- 4111 1111 1111 1111
+    	<br />
+    	CVV -- 321
+    	<br />
+    	month -- 02
+    	<br />
+    	year -- 17
+    	</div>
+
+
 
 		<!-- Bootstrap JS include -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -107,7 +113,7 @@
 		<!-- Braintree JS include --> 
 		<script src="https://js.braintreegateway.com/v1/braintree.js"></script>
 		<script>
-		var braintree = Braintree.create("YourClientSideEncryptionKey");
+		var braintree = Braintree.create("MIIBCgKCAQEA4r8HobL/ayOzyAiSOTelqXZ1+0MfH0JTj3mjeYnPm3eqv88jVcv1Bvs2A/Rr1/wlKPCWyL33ZvoMgqMM3ETYWZdb0t+UnUi+/c8cHyjp1YT7//L0gDgGtzwLkypQ+r7vhXG2B09YYxW0gTn6nvtse0POwNyz5+IGu7u3Xfr2rVePNHm22zmxwlf2/kzEaWdz6OTNFjN+5RRo1A1oefE0AgQeMLUigLZyN69k8Ex/thbOrO3HzWuA4xC2o0lnrayE/YQavzX8m9v1ddr3Lp6airzERK2LD9Atr5Ech0fXDENT5Q8KXgT3XDgntSSVmyVGZ");
 		braintree.onSubmitEncryptForm('braintree-payment-form');
 		</script>
 
