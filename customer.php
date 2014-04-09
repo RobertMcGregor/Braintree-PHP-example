@@ -1,9 +1,8 @@
 <?php
 /*********************************************************
 *
-* Process.php
-* where all form information comes to get processed 
-* TODO add subscription type
+* customer.php
+* where customer imnormation is processed
 *
 /*********************************************************/
 
@@ -30,7 +29,8 @@
     ));
 
     if ($result->success) {
-        echo("Success! Customer ID: " . $result->customer->id);
+        echo("Success! Customer ID: " . $result->customer->id . "<br/>");
+        echo("<a href='./subscription.php?customer_id=" . $result->customer->id . "'>Create subscription for this customer</a>");
     } else {
         echo("Validation errors:<br/>");
         foreach (($result->errors->deepAll()) as $error) {
