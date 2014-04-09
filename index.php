@@ -56,8 +56,8 @@
 
 
 	    	<div class="starter-template">
-	    		<h1>Bootstrap starter template</h1>
-	    		<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+	    		<h1>Braintree, Gigya and TVOD</h1>
+	    		<p class="lead">This is a quick test to get braintree, gigya talking for the TVOD project.</p>
 	    	</div>
 
 			<div>
