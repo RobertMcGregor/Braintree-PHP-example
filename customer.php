@@ -6,9 +6,6 @@
 *
 /*********************************************************/
 
-print_r($_POST);
-die;
-
     // require braintree
     require_once 'lib/braintree-php-2.27.0/lib/Braintree.php';
     // configure braintree
