@@ -18,13 +18,13 @@
 
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-		<title>Title Goes Here</title>
+		<title>Welcome to TVOD</title>
 
 		<!-- socialize.js script should only be included once -->
 		<script type="text/javascript" src="http://cdn.gigya.com/js/socialize.js?apiKey=3_6Xi2j7Oip7qk2BhjndSy6sxfG1mL-M5VABBF-vc3NZJ0CdssXTapV-z-Zlqh1rbM">
 		{
-			siteName: 'dev.robertmcgregor.ca (testing various data func)'
-			,enabledProviders: 'facebook,twitter,googleplus,linkedin,yahoo,microsoft,aol,foursquare,orkut,instagram,vkontakte,renren,QQ,Sina,kaixin'
+			siteName: 'dev.robertmcgregor.ca'
+			,enabledProviders: 'facebook,twitter,linkedin,paypal'
 		}
 		</script>
 
@@ -57,17 +57,16 @@
 			}
 
 		?>
-		
+
 		<br />
 
 		<script type="text/javascript">
 		var login_params=
 		{
 			showTermsLink: 'false'
-			,height: 100
-			,width: 330
-			,containerID: 'componentDiv'
-			,buttonsStyle: 'fullLogo'
+			,height: 230
+			,width: 310
+			,UIConfig: '<config><body><controls><snbuttons buttonsize="50" /></controls></body></config>'
 			,autoDetectUserProviders: ''
 			,facepilePosition: 'none'
 		}
