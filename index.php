@@ -60,8 +60,6 @@
 	    		<p class="lead">This is a quick test to get braintree, gigya talking for the TVOD project.</p>
 	    	</div>
 
-			<div>
-
 
     <h1>Braintree Customer Form</h1>
       <form action="customer.php" method="POST" id="braintree-payment-form">
@@ -97,10 +95,7 @@
     <script>
       var braintree = Braintree.create("YourClientSideEncryptionKey");
       braintree.onSubmitEncryptForm("braintree-payment-form");
-    </script>	
-			
-
-			</div>
+    </script>
 
 
     	</div><!-- /.container -->
