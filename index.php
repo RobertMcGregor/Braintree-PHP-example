@@ -47,11 +47,12 @@
 			,facepilePosition: 'none'
 		}
 		</script>
-		<div id="componentDiv">Login to purchase</div>
+		<div id="componentDiv"></div>
 		<script type="text/javascript">
 		   gigya.socialize.showLoginUI(login_params);
 		</script>
 
+		<?= process(); ?>
 
 	</body>
 
