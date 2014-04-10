@@ -78,7 +78,7 @@
       <h2>Credit Card</h2>
       <p>
         <label>Card Number</label>
-        <input type="text" size="20" autocomplete="off" data-encrypted-name="number" />
+        <input type="text" name="number" size="20" autocomplete="off" data-encrypted-name="number" />
       </p>
       <p>
         <label>CVV</label>
