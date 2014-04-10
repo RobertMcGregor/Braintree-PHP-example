@@ -25,7 +25,7 @@
 
         $result = Braintree_Subscription::create(array(
             'paymentMethodToken' => $payment_method_token,
-            'planId' => 'test_plan_1'
+            'planId' => 'one_month_plan'
         ));
 
         if ($result->success) {
