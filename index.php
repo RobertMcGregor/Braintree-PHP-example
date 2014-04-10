@@ -82,11 +82,11 @@
       </p>
       <p>
         <label>CVV</label>
-        <input type="text" size="4" autocomplete="off" data-encrypted-name="cvv" />
+        <input type="text" name="cvv" size="4" autocomplete="off" data-encrypted-name="cvv" />
       </p>
       <p>
         <label>Expiration (MM/YYYY)</label>
-        <input type="text" size="2" data-encrypted-name="month" /> / <input type="text" size="4" data-encrypted-name="year" />
+        <input type="text" name="month" size="2" data-encrypted-name="month" /> / <input type="text" name="year" size="4" data-encrypted-name="year" />
       </p>
       <input class="submit-button" type="submit" />
     </form>
