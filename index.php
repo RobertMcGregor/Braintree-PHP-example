@@ -86,18 +86,23 @@
       <input class="submit-button" type="submit" />
     </form>
 
+		<br />
+		<br />
+		
+    	<div>
+	    	<h1>Test Data</h1>
+    		card num -- 4111 1111 1111 1111
+    	<br />
+    		CVV -- 321
+    	<br />
+    		month -- 02
+    	<br />
+    		year -- 17
+    	</div>
+
+
     	</div><!-- /.container -->
 
-    	<div>
-    	<h1>Test Data</h1>
-    	card num -- 4111 1111 1111 1111
-    	<br />
-    	CVV -- 321
-    	<br />
-    	month -- 02
-    	<br />
-    	year -- 17
-    	</div>
 
 
 
