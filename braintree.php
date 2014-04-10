@@ -38,11 +38,30 @@
 
 			<br />
 			<br />
+      <br />
+      <br />
 
-        <div class="starter-template">
-          <h1>Braintree, Gigya and TVOD</h1>
-          <p class="lead">This is a quick test to get braintree, gigya talking for the TVOD project.</p>
-        </div>
+      <table>
+        <tr>
+          <td>Card Number: </td>
+          <td>4111 1111 1111 1111</td>
+        </tr>
+        <tr>
+          <td>CVV</td>
+          <td>321</td>
+        </tr>
+        <tr>
+          <td>Month</td>
+          <td>02</td>
+        </tr>   
+        <tr>
+          <td>Year</td>
+          <td>17</td>
+        </tr>             
+      </table>
+
+      <br />
+      <br />
 
       <h1>Braintree Customer Form</h1>
       <form action="customer.php" method="POST" id="braintree-payment-form">
@@ -72,21 +91,13 @@
           <label>Expiration (MM/YYYY)</label>
           <input type="text" size="2" data-encrypted-name="month" /> / <input type="text" size="4" data-encrypted-name="year" />
         </p>
+
         <input class="submit-button" type="submit" />
       </form>
 
 			<br />
 			<br />
         
-      <div>
-        <ul>
-          <li>4111 1111 1111 1111</li>
-          <li>321</li>
-          <li>02</li>
-          <li>17</li>
-        </ul>
-      </div>
-
     </div><!-- /.container -->
 
 		<!-- Bootstrap JS include -->

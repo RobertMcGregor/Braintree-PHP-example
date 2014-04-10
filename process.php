@@ -3,7 +3,7 @@
 *
 * Process.php
 * where all form information comes to get processed 
-* TODO add subscription type
+* TODO add subscription types
 *
 /*********************************************************/
 
