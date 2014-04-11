@@ -12,9 +12,8 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./braintree.php">Home</a></li>
+            <li class="active"><a href="./braintree.php">Braintree</a></li>
             <li><a href="./gigya.php">Gigya</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
