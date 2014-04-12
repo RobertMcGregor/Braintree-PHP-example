@@ -17,9 +17,6 @@
 
         <!-- gigya login css --> 
         <link href="css/gigya.css" rel="stylesheet">
-    	
-        <SCRIPT type="text/javascript" lang="javascript" 
-           src="http://cdn.gigya.com/JS/socialize.js?apikey=3_6Xi2j7Oip7qk2BhjndSy6sxfG1mL-M5VABBF-vc3NZJ0CdssXTapV-z-Zlqh1rbM "></SCRIPT>
      
         <style type="text/css">
             h2 {

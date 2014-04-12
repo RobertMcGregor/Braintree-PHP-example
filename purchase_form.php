@@ -15,44 +15,20 @@
 
 </script>
 
-
-    <div type="button" name="toggle" class="toggle_btn">View test data </div>
-
-    <div class="toggle_target">
-      <table>
-        <tr>
-          <td style="padding-right:10px;">Card Number: </td>
-          <td>4111 1111 1111 1111</td>
-        </tr>
-        <tr>
-          <td style="padding-right:10px;">CVV</td>
-          <td>321</td>
-        </tr>
-        <tr>
-          <td style="padding-right:10px;">Month</td>
-          <td>02</td>
-        </tr>   
-        <tr>
-          <td style="padding-right:10px;">Year</td>
-          <td>17</td>
-        </tr>             
-      </table>
-    </div>
-
     <br />
-
-    <form action="create_subscription.php" method="POST" id="braintree-payment-form">
+    <br />
+    <form action="customer.php" method="POST" id="braintree-payment-form">
       <table>
         <tr>
           <td colspan="2"> <span><strong>Please select an option</strong></span> </td>
         </tr>
         <tr>
-          <td style="padding-right:10px;">$30 - One month subscription </td>
-          <td> <input type="radio" name="subscription" value="one_month_plan"> </td> 
+          <td style="padding-right:10px;"> One month subscription </td>
+          <td> $30 </td> 
         </tr>
         <tr>
-          <td style="padding-right:10px;">$60 - Six month subscription </td>
-          <td> <input type="radio" name="subscription" value="six_month_plan"> </td>
+          <td style="padding-right:10px;"> Six month subscription </td>
+          <td> $60 </td>
         </tr>
 
         <tr>
@@ -90,10 +66,7 @@
           <td colspan="2"> <input class="submit-button" type="submit" /> </td>
         </tr>
 
+
       </table>
 
     </form>
-
-<?php
-require_once 'footer.php';
-?>
