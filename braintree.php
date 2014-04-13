@@ -51,7 +51,7 @@
           <td> <input type="radio" name="subscription" value="one_month_plan"> </td> 
         </tr>
         <tr>
-          <td style="padding-right:10px;">$60 - Six month subscription </td>
+          <td style="padding-right:10px;">$100 - Six month subscription </td>
           <td> <input type="radio" name="subscription" value="six_month_plan"> </td>
         </tr>
 
