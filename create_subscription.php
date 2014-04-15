@@ -61,7 +61,7 @@
 
                 // add customer id to gigya
 
-                $customer_result->customer->id
+                $customer_result->customer->id;
                 
                 /*
 
