@@ -28,16 +28,6 @@
 			
 		</script>
 
-
-		<script>
-		 	
-		 	$(".load_form_btn").click(function(){
-		 		$(".load_form_target").load("braintree.php");
-		 		$(".load_form_btn").hide();
-		 	});
-
-		</script>
-
 		<!-- Gigya logout --> 
 		<script>
 			function onLogout(response) {   
@@ -49,6 +39,15 @@
 				} 
 			}
 		</script>
+
+		<script>
+		 	// Load Braintree purchase form
+		 	$(".load_form_btn").click(function(){
+		 		$(".load_form_target").load("braintree.php"); // <-- see braintree.php
+		 		$(".load_form_btn").hide();
+		 	});
+
+		</script>		
 
 	</body>
 </html>

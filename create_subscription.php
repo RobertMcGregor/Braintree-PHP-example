@@ -9,7 +9,7 @@
 
     require_once 'config.php';
 
-    $result = Braintree_Customer::create(array(
+    $customer_result = Braintree_Customer::create(array(
         "firstName" => $_POST["first_name"],
         "lastName" => $_POST["last_name"],
         "creditCard" => array(
@@ -23,19 +23,60 @@
         )
     ));
 
-    if ($result->success) {
+    if ($customer_result->success) {
         try {
-            $customer_id = $result->customer->id;
+            $customer_id = $customer_result->customer->id;
             $customer = Braintree_Customer::find($customer_id);
             $payment_method_token = $customer->creditCards[0]->token;
 
-            $result = Braintree_Subscription::create(array(
+            $subscription_result = Braintree_Subscription::create(array(
                 'paymentMethodToken' => $payment_method_token,
                 'planId' => $_POST['subscription']
             ));
 
-            if ($result->success) {
-                echo("Success! Subscription " . $result->subscription->id . " is " . $result->subscription->status);
+            if ($subscription_result->success) {
+                echo("Success! Subscription " . $subscription_result->subscription->id . " is " . $subscription_result->subscription->status);
+
+                echo("<br /> Customer Details: ");
+                echo("<pre>");
+                print_r($customer_result);
+                echo("</pre>");
+
+                echo(' <br /><br />------------------------------[SUBSCRIPTION]------------------------------<br /><br />');
+
+                echo("<br /> Subscription Details: ");
+                echo("<pre>");
+                print_r($subscription_result);
+                echo("</pre>");
+
+                echo(' <br /><br />------------------------------[FOUND CUSTOMER]------------------------------<br /><br />');
+    
+
+                $customer = Braintree_Customer::find($customer_result->customer->id);
+
+                echo("<pre>");
+                print_r($customer);
+                echo("</pre>");
+
+
+                // add customer id to gigya
+
+                $customer_result->customer->id
+                
+                /*
+
+                    TO DO: braintree_customer_id
+
+                    insert customer id to gigya. 
+                    gigya
+                    http://developers.gigya.com/020_Client_API/020_Accounts/accounts.setAccountInfo
+                    braintree
+                    https://www.braintreepayments.com/docs/php/customers/search
+                */
+                
+
+
+
             } else {
                 echo("Validation errors:<br/>");
                 foreach (($result->errors->deepAll()) as $error) {
