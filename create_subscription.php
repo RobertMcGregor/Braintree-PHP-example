@@ -59,12 +59,11 @@
                 echo("</pre>");
 
 
-                // add customer id to gigya
+                // TODO: add customer id to gigya
 
-                $customer_result->customer->id;
+                //$customer_result->customer->id;
                 
                 /*
-
                     TO DO: braintree_customer_id
 
                     insert customer id to gigya. 
