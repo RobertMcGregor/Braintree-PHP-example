@@ -1,4 +1,7 @@
 <?php
+    // require teh gigya server side SDK
+    require_once 'lib/Gigya_PHP_SDK/GSSDK.php';
+
     // require braintree
     require_once 'lib/braintree-php-2.27.0/lib/Braintree.php';
     // configure braintree

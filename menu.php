@@ -13,6 +13,8 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="./demo.php">Demo 1</a></li>
+            <li class="active"><a href="./demo2.php">Demo 2</a></li>
+            <li class="active"><a href="./demo3.php">Demo 3</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
