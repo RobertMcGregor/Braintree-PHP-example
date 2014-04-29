@@ -32,7 +32,7 @@ try {
 	$response = $request->send();
 
 	if($response->getErrorCode()==0){ 
-		echo “Success in setStatus operation.”;
+		echo (“Success in setStatus operation.”);
 		//print_r($response);
 	}
 	else{ 
