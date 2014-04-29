@@ -24,7 +24,7 @@ try {
 	$option_2 = GSObject($_POST['option_2']);
 	$option_3 = GSObject($_POST['option_3']);
 	$option_4 = GSObject($_POST['option_4']);	
-	$params = null
+	$params = null;
 	$useHTTPS = true;
 
 	$request = new GSRequest($apiKey, $secretKey, $command, $params, $useHTTPS);
