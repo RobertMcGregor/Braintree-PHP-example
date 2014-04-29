@@ -29,7 +29,7 @@ try {
 
 	$request = new GSRequest($apiKey, $secretKey, $command, $params, $useHTTPS);
 
-	$response = request->send();
+	$response = $request->send();
 
 	if($response->getErrorCode()==0){ 
 		echo “Success in setStatus operation.”;
