@@ -19,8 +19,12 @@ echo("</pre> <br /> <hr> <br /><br />");
 // 3_gpu8tEExJ3NwkC3JBauhmwpSnxjpwIZS6dVYvEE8z5OsuB2_Tv0887PQhh4cZobY
 // DVUKa9GjLS7UoFkpPk733vIMZuF5jFXMUikkQ5qQyPY=
 
-// View single account
+// View single account QA
 // https://accounts.gigya.com/accounts.getAccountInfo?UID=robert.mcgregor@bellmedia.ca&ApiKey=3_PzNwMEMUYcK9WFfYmOwlmN5AiAXN5dWJZeYr8lGvdGOEh_aJAa0uiteRkb5sIiL3&secret=DVUKa9GjLS7UoFkpPk733vIMZuF5jFXMUikkQ5qQyPY=
+
+// View single account PROD
+// https://accounts.gigya.com/accounts.getAccountInfo?UID=robert.mcgregor@bellmedia.ca&ApiKey=3_gpu8tEExJ3NwkC3JBauhmwpSnxjpwIZS6dVYvEE8z5OsuB2_Tv0887PQhh4cZobY&secret=DVUKa9GjLS7UoFkpPk733vIMZuF5jFXMUikkQ5qQyPY=
+
 
 try {
 	
