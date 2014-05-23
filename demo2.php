@@ -85,12 +85,17 @@ require_once 'menu.php';
 		// &secret=DVUKa9GjLS7UoFkpPk733vIMZuF5jFXMUikkQ5qQyPY=
 
 
+		// PRODUCTION
+		// ?ApiKey=3_PzNwMEMUYcK9WFfYmOwlmN5AiAXN5dWJZeYr8lGvdGOEh_aJAa0uiteRkb5sIiL3
+		// &secret=DVUKa9GjLS7UoFkpPk733vIMZuF5jFXMUikkQ5qQyPY=
+
+
 		$("#restForm").on("submit", function (e) {
     		e.preventDefault();
 			
 			var frameStart = '<iframe width="100%" height="600" src="';
 			var frameEnd = '"></iframe>';
-			var APIkey = "?ApiKey=3_6Xi2j7Oip7qk2BhjndSy6sxfG1mL-M5VABBF-vc3NZJ0CdssXTapV-z-Zlqh1rbM";
+			var APIkey = "?ApiKey=3_PzNwMEMUYcK9WFfYmOwlmN5AiAXN5dWJZeYr8lGvdGOEh_aJAa0uiteRkb5sIiL3";
     		var Secretkey = "&secret=DVUKa9GjLS7UoFkpPk733vIMZuF5jFXMUikkQ5qQyPY=";
     		var command = $("#restFormCommand").val();
     		var option_1 = $("#option_1").val(); 

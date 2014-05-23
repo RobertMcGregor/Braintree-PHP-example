@@ -55,7 +55,7 @@
 
         <!-- Gigya JS --> 
         <script type="text/javascript" lang="javascript" 
-           src="http://cdn.gigya.com/JS/socialize.js?apikey=3_6Xi2j7Oip7qk2BhjndSy6sxfG1mL-M5VABBF-vc3NZJ0CdssXTapV-z-Zlqh1rbM "></script>
+           src="http://cdn.gigya.com/JS/socialize.js?apikey=3_gpu8tEExJ3NwkC3JBauhmwpSnxjpwIZS6dVYvEE8z5OsuB2_Tv0887PQhh4cZobY"></script>
 
 
     </head>
